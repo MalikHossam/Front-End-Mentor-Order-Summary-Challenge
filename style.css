@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Red Hat Display", sans-serif;
+}
+/* ############################### MOBILE FIRST ###################### */
+body {
+	background-image: url(pattern-background-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: hsl(225, 100%, 94%);
+	margin: 10% auto;
+}
+div {
+	width: 335px;
+	margin: 0 auto;
+	border-radius: 30px;
+	background-color: white;
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 5px 9px rgba(0, 0, 0, 0.39);
+}
+/* ############################# SECTION 1 ###################### */
+
+div .sec1 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.sec1 p {
+	color: hsl(224, 23%, 55%);
+	max-width: 25ch;
+	line-height: 25px;
+	margin: 5% 0;
+}
+
+h3,
+strong,
+p {
+	margin: 0;
+}
+/* ############################# SECTION 2 ###################### */
+
+.sec2 table {
+	background-color: hsl(225, 100%, 94%);
+	width: fit-content;
+	margin: 20px auto;
+	border-radius: 15px;
+	border-spacing: 20px 0;
+}
+
+a:visited {
+	color: hsl(245, 75%, 52%);
+}
+
+/* ############################# SECTION 3 ###################### */
+
+.sec3 .pay {
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	background-color: hsl(245, 75%, 52%);
+	color: white;
+	padding: 15px 70px;
+	margin: 25px auto;
+	border-radius: 10px;
+	box-shadow: 0 5px 9px black;
+}
+.pay:hover {
+	opacity: 0.5;
+}
+.sec3 .cancel {
+	display: block;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	width: fit-content;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+/* ###################### OTHER SCREENS > 375PX ################### */
+
+@media (min-width: 376px) {
+	body {
+		background-image: url(pattern-background-desktop.svg);
+		margin: 5% auto;
+	}
+}
+
+.attribution {
+	margin: 5px auto;
+}
